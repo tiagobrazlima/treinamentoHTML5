@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Estrutura inLine</title>
+
+  </head>
+  <body>
+    <p></p>
+    <p class = "paragrafo"></p>
+    <p class = "Outroparagrafo"></p>
+    <p id = "parId"></p>
+
+    <script type="text/javascript">
+      function digaOI() {
+        alert("Oi :) ")
+      }
+
+      document.getElementsByClassName("paragrafo")[0].innerHTML = "Parágrafo I";
+      document.getElementsByClassName("paragrafo")[0].style.backgroundColor = "red";
+
+      document.getElementsByClassName("Outroparagrafo")[0].innerHTML = "Parágrafo II";
+      document.getElementsByClassName("Outroparagrafo")[0].style.backgroundColor = "yellow";
+
+      document.getElementById("parId").innerHTML = "Paragrafo III";
+      document.getElementById("parId").style.backgroundColor = "blue";
+      //document.getElementByTagName("body").style.backgroundColor = "blue";
+    </script>
+
+  </body>
+</html>
